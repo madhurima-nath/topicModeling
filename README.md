@@ -14,4 +14,9 @@ source, EDA, data cleaning/processing
 
 ## Example results
 
+The output of LDA can be also saved in the following way. This can be used if 
+the requirement is that the end users want to drill down into each of the comments
+details. This could be fed into one of the data visualization platforms like
+MS Power BI or Tableau to provide the end users with usable dashboards.
+
 ## How everything fits? - better title needed
