@@ -36,19 +36,97 @@ end-to-end solution.
 
 ## <a name = "algo"> </a> Topic modeling algorithms
 
-• an unsupervised machine learning problem.
-• does not aim to find similarities in documents, 
-unlike text classification or clustering.
-• makes clusters of three types of words – co-occurring words, 
-distribution of words, and histogram of words topic-wise.
-• Conventional and well-known approaches to topic modeling are: 
+- an unsupervised machine learning problem.
+- does not aim to find similarities in documents,
+  unlike text classification or clustering.
+- makes clusters of three types of words – co-occurring words,
+  distribution of words, and histogram of words topic-wise.
+- Conventional and well-known approaches to topic modeling are: 
     § Latent Semantic Analysis (LSA) (Deerwester et al. 1990)
+  
     § Probabilistic Latent Semantic Analysis (pLSA) (Hofmann, 1999)
+
     § Latent Dirichlet Allocation (LDA) (Blei et al., 2003)
-• basic principle behind the search of latent topics is the 
-**decomposition of the Document-Term Matrix (DTM) into a document-topic**
-**and a topic-term matrix**. The three methods differ in how
-they define and reach this goal.
+- basic principle behind the search of latent topics is the
+  **decomposition of the Document-Term Matrix (DTM) into a document-topic**
+  **and a topic-term matrix**. The three methods differ in how
+  they define and reach this goal.
+
+**STEP 1**:
+
+Start with the conversion of a textual corpus into 
+a Document -Term Matrix (DTM), a table where each row is a document, 
+and each column is a distinct word.
+
+Consider this corpus:
+| | |
+| --- | --- |
+| document 1 | I like books |
+| document 2 | I recently read two bestseller books |
+| document 3 | Some movies are based on bestseller books |
+
+The **`DOCUMENT-TERM MATRIX (DTM)`** for this corpus is
+
+| | I | like | books | recently | read | two | bestseller | some | movies | are | based | on |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| doc1 | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| doc2 | 1 | 0 | 1 | 1 | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| doc3 | 0 | 0 | 1 | 0 | 0 | 0 | 1 | 1 | 1 | 1 | 1 | 1 |
+
+This matrix basically does a count of frequency of each of the words/terms
+in the documents. This is called the ***Term Frequency (TF)***.
+
+As an alternative, ***Term Frequency – Inverse Document Frequency (TF-IDF)*** 
+cam be considered.
+
+**STEP 2**:
+
+Decompose the **DTM** and extract topics.
+- LSA uses matrix factorization - Singular Value Decomposition (SVD)
+- pLSA uses probabilistic model, calculates the joint probability
+  of seeing a word and a document together as a mixture of conditionally
+  independent multinomial distributions
+- LDA uses Dirichlet priors to estimate the document-topic and term-topic
+  distributions in a Bayesian approach
+
+The goal is to fins the `Topic-Term Matrix` by solving the equation
+
+`DTM` (dim: $m \times n$) = `Document-Topic Matrix` (dim: $m \times t$) 
+`Topic-Importance Matrix` (dim: $t \times \t) `Topic-Term Matrix` (dim: $t \times n)
+
+**`Document-Term Matrix (DTM)`** (dim: $m \times t$)
+
+| | term 1 | term 2 | ... | term n |
+| --- | --- | --- | --- | --- |
+| doc 1 | 1 | 0 | | |
+| doc 2 | 0 | 1 | | |
+| ... | | | | |
+| doc m | | | | |
+
+**`Document-Topic Matrix`** (dim: $m \times t$) 
+
+| | topic 1 | topic 2 | topic 3 |
+| --- | --- | --- | --- |
+| doc 1 | | | |
+| doc 2 | | | |
+
+**`Topic-Importance Matrix`** (dim: $t \times \t)
+
+| | topic 1 | topic 2 | topic 3 |
+| --- | --- | --- | --- |
+| topic 1 | | | |
+| topic 2 | | | |
+| topic 3 | | | |
+
+**`Topic-Term Matrix`** (dim: $t \times n)
+| | term 1 | term 2 | term 3 |
+| --- | --- | --- | --- |
+| topic 1 | | | |
+| topic 2 | | | |
+| topic 3 | | | |
+
+where, $m$ = Number of documents, $n$ = Number of words and $t$ = Number of topics
+
 
 ### LDA
 
