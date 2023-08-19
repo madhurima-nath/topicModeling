@@ -32,21 +32,21 @@ end-to-end solution.
   on such solutions. 
 
 
-## Topic modeling algorithms (#algo)
+## Topic modeling algorithms (# algo)
 
 ### LDA
 
-## Dataset used (#data)
+## Dataset used (# data)
 
 source, EDA, data cleaning/processing
 
-### Data processing/transformation using pandas (#pandas)
+### Data processing/transformation using pandas (# pandas)
 pandas notebook
 
-### Data processing/transformation using spark (#spark)
+### Data processing/transformation using spark (# spark)
 Spark notebook link
 
-## Example results (#results)
+## Example results (# results)
 Depending on the requirements of the end-users, the output format of the topics obtained
 may change. Usually, when topic modeling is done, the topic and the distribution of
 terms/words in the topic is obtained and presented as result. 
@@ -72,15 +72,15 @@ Both these output formats can be easily fed into one of the data
 visualization platforms like MS Power BI or Tableau to provide 
 the end users with usable dashboards.
 
-### Pandas results (#pandasresults)
+### Pandas results (# pandasresults)
 pandas notebook link, explain the pandas lda module
 
-### Spark results (#sparkresults)
+### Spark results (# sparkresults)
 spark notebook link, explain spark nlp modules
 
-## End-to-end implementation (#end)
+## End-to-end implementation (# end)
 
-## Data architecture (#dataarch)
+## Data architecture (# dataarch)
 There are a lot of pieces involved while designing an end-to-end solution. 
 ![image](https://github.com/madhurima-nath/topicModeling/blob/main/dataArchitecture.jpg)
 
