@@ -26,10 +26,8 @@ end-to-end solution.
 
 - Section [End-to-end implementation](#end) showcases an example of a
   sample arcitecture of deploying such a large-scale solution to production.
-  
-- Section [Data architecture](#dataarch) - discusses the necessary infrastructure
-  for an enterprise-wide product and how multiple teams collaborate together
-  on such solutions. 
+  This also shows how multiple teams collaborate together for
+  an enterprise-wide to build such solutions. 
 
 
 ## <a name = "algo"> </a> Topic modeling algorithms
@@ -40,13 +38,13 @@ end-to-end solution.
 
 source, EDA, data cleaning/processing
 
-### Data processing/transformation using pandas (# pandas)
+### <a name = "pandas"> </a> Data processing/transformation using pandas
 pandas notebook
 
-### Data processing/transformation using spark (# spark)
+### <a name = "spark"> </a> Data processing/transformation using spark
 Spark notebook link
 
-## Example results (# results)
+## <a name = "results"> </a> Example results
 Depending on the requirements of the end-users, the output format of the topics obtained
 may change. Usually, when topic modeling is done, the topic and the distribution of
 terms/words in the topic is obtained and presented as result. 
@@ -72,16 +70,17 @@ Both these output formats can be easily fed into one of the data
 visualization platforms like MS Power BI or Tableau to provide 
 the end users with usable dashboards.
 
-### Pandas results (# pandasresults)
+### <a name = "pandasresults"> </a> Pandas results
 pandas notebook link, explain the pandas lda module
 
-### Spark results (# sparkresults)
+### <a name = "sparkresults"> </a> Spark results
 spark notebook link, explain spark nlp modules
 
-## End-to-end implementation (# end)
-
-## Data architecture (# dataarch)
+## <a name = "end"> </a> End-to-end implementation
 There are a lot of pieces involved while designing an end-to-end solution. 
 ![image](https://github.com/madhurima-nath/topicModeling/blob/main/dataArchitecture.jpg)
+
+### Data architecture
+insert sample data architecture.
 
 # References:
