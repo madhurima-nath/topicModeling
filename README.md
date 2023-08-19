@@ -138,7 +138,7 @@ collections of discrete data such as text corpora.
   of topics.
 * Each topic is modeled as an infinite mixture over an underlying set of topic probabilities.
 * The topic probabilities provide an explicit representation of a document.
----
+
 Pros:
 * better performances than LSA and pLSA
 * can assign a probability to a new document thanks
