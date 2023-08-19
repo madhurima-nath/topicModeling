@@ -13,10 +13,14 @@ end-to-end solution.
   modeling algorithms available.
 
 - Section [Dataset used](#data) - provides information on the sample data that is
-  used in this repository to perform topic modeling. The sub-section
+  used in this repository to perform topic modeling.
+
+  The sub-section
   [Data processing/transformation using pandas](#pandas) provides the
   well-known data processing steps. Data processing can also be done
-  using spark when hnadling datasets of large sizes. The sub-section
+  using spark when hnadling datasets of large sizes.
+
+  The sub-section
   [Data processing/transformation using spark](#spark) discusses the
   advantages of using Spark and how it can be used on dataframes.
 
