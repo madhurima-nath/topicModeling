@@ -128,8 +128,33 @@ The goal is to fins the `Topic-Term Matrix` by solving the equation
 
 where, $m$ = Number of documents, $n$ = Number of words and $t$ = Number of topics
 
+---
 
-### LDA
+### Latent Dirichlet Allocation (LDA)
+LDA is a ***generative probabilistic*** model for 
+collections of discrete data such as text corpora.
+* A 3-level hierarchical Bayesian model, in which each
+  item of a collection is modeled as a finite mixture over an underlying set
+  of topics.
+* Each topic is modeled as an infinite mixture over an underlying set of topic probabilities.
+* The topic probabilities provide an explicit representation of a document.
+---
+Pros:
+* better performances than LSA and pLSA
+* can assign a probability to a new document thanks
+  to the document-topic Dirichlet distribution
+* topics are open to human interpretation
+Cons:
+* number of topics must be known/set beforehand
+* bag-of-words approach disregards the semantic
+  representation of words in a corpus, similar to LSA and pLSA
+* estimation of Bayes parameters lies under the
+  assumption of exchangeability for the documents
+* requires an extensive pre-processing phase
+  to obtain a significant representation from the textual input data
+* studies report LDA may yield too general (Rizvi et al., 2019)
+  or irrelevant (Alnusyan et al., 2020) topics.
+  Results may also be inconsistent across different executions (Egger et al., 2021).
 
 ## <a name = "data"> </a>  Dataset used
 
