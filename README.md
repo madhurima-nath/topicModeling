@@ -41,7 +41,8 @@ end-to-end solution.
   unlike text classification or clustering.
 - makes clusters of three types of words – co-occurring words,
   distribution of words, and histogram of words topic-wise.
-- Conventional and well-known approaches to topic modeling are: 
+- Conventional and well-known approaches to topic modeling are:
+  
     § Latent Semantic Analysis (LSA) (Deerwester et al. 1990)
   
     § Probabilistic Latent Semantic Analysis (pLSA) (Hofmann, 1999)
