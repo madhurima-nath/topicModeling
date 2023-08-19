@@ -32,11 +32,11 @@ end-to-end solution.
   on such solutions. 
 
 
-## Topic modeling algorithms (# algo)
+## <a name = "algo"> </a> Topic modeling algorithms
 
 ### LDA
 
-## Dataset used (# data)
+## <a name = "data"> </a>  Dataset used
 
 source, EDA, data cleaning/processing
 
