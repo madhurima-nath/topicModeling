@@ -144,6 +144,7 @@ Pros:
 * can assign a probability to a new document thanks
   to the document-topic Dirichlet distribution
 * topics are open to human interpretation
+  
 Cons:
 * number of topics must be known/set beforehand
 * bag-of-words approach disregards the semantic
