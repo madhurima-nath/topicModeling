@@ -1,26 +1,87 @@
-# Implementation of topic modeling in Industry
+# Implementation of end-to-end topic modeling solution
 
-Topic modeling is a part of natural language processing (NLP) which enables end-users to identify themes and topics within a collection of documents. It has applications in multiple industries for text mining and gaining relevant insights from textual data. This talk will cover the math behind topic modeling, one example of extracting topics from a sample data and how the user can leverage these outcomes to take actionable insights. This talk will also discuss the necessary infrastructure for an enterprise-wide product and how multiple teams collaborate together on such solutions.
+Topic modeling is a part of natural language processing (NLP) which enables end-users to 
+identify themes and topics within a collection of documents. It has applications in multiple industries for text mining and gaining relevant insights from textual data. 
+This repository can be used as a reference to undertsand the math behind topic modeling, 
+do a hands-on exercise of extracting topics from a sample data, use both pandas and
+pyspark libraries to perform data processing and topic modeling,
+how the end user can leverage these outcomes to take actionable insights and lastly,
+what are the necessary infrastructure required to implement a large-scale
+end-to-end solution.
 
-## Data Architecture
-There are a lot of pieces involved while designing an end-to-end solution. One such example is shown in the following architecture. 
-![image](https://github.com/madhurima-nath/topicModeling/blob/main/dataArchitecture.jpg)
+- Section [Topic modeling algorithms](#algo) - explains the different topic
+  modeling algorithms available.
+
+- Section [Dataset used](#data) - provides information on the sample data that is
+  used in this repository to perform topic modeling. The sub-section
+  [Data processing/transformation using pandas](#pandas) provides the
+  well-known data processing steps. Data processing can also be done
+  using spark when hnadling datasets of large sizes. The sub-section
+  [Data processing/transformation using spark](#spark) discusses the
+  advantages of using Spark and how it can be used on dataframes.
+
+- Section [Example results](#results) - shows the output of topic
+  modeling on the above dataset. The analysis is done using both
+  pandas LDA modules and SparkNLP modules.
+
+- Section [End-to-end implementation](#end) showcases an example of a
+  sample arcitecture of deploying such a large-scale solution to production.
+  
+- Section [Data architecture](#dataarch) - discusses the necessary infrastructure
+  for an enterprise-wide product and how multiple teams collaborate together
+  on such solutions. 
 
 
-## Data
-
-
-source, EDA, data cleaning/processing
-
-## Topic modeling algorithms
+## Topic modeling algorithms (#algo)
 
 ### LDA
 
-## Example results
+## Dataset used (#data)
 
-The output of LDA can be also saved in the following way. This can be used if 
-the requirement is that the end users want to drill down into each of the comments
-details. This could be fed into one of the data visualization platforms like
-MS Power BI or Tableau to provide the end users with usable dashboards.
+source, EDA, data cleaning/processing
 
-## How everything fits? - better title needed
+### Data processing/transformation using pandas (#pandas)
+pandas notebook
+
+### Data processing/transformation using spark (#spark)
+Spark notebook link
+
+## Example results (#results)
+Depending on the requirements of the end-users, the output format of the topics obtained
+may change. Usually, when topic modeling is done, the topic and the distribution of
+terms/words in the topic is obtained and presented as result. 
+| Topic | Topic terms | Topic weights/probablities | 
+| --- | --- | --- | 
+| 1 | \[term1, term2, term3\] | \[prob1, prob2, prob3 \] |
+| 2 | \[term1, term2, term3\] | \[prob1, prob2, prob3 \] |
+| 3 | \[term1, term2, term3\] | \[prob1, prob2, prob3 \] |
+
+However it is also possible to map these output topics back to the
+original dataset, with each row showing which set of topic(s) it might belong to.
+This can be used if the requirement is that the end users want to drill down 
+into each of the comments details. 
+
+| ID | Title | Abstract | Topic | Topic terms | Topic weights/probablities | 
+| --- | --- | --- | --- | --- | --- |
+| 1 | title 1 | abstract text | 1 | \[term1, term2, term3\] | \[prob1, prob2, prob3 \] |
+| 2 | title 2 | abstract text | 3 | \[term1, term2, term3\] | \[prob1, prob2, prob3 \] |
+...
+| 500 | title 100 | abstract text | 5 | \[term1, term2, term3\] | \[prob1, prob2, prob3 \] |
+
+Both these output formats can be easily fed into one of the data 
+visualization platforms like MS Power BI or Tableau to provide 
+the end users with usable dashboards.
+
+### Pandas results (#pandasresults)
+pandas notebook link, explain the pandas lda module
+
+### Spark results (#sparkresults)
+spark notebook link, explain spark nlp modules
+
+## End-to-end implementation (#end)
+
+## Data architecture (#dataarch)
+There are a lot of pieces involved while designing an end-to-end solution. 
+![image](https://github.com/madhurima-nath/topicModeling/blob/main/dataArchitecture.jpg)
+
+# References:
