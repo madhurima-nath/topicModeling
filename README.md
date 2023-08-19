@@ -81,7 +81,7 @@ cam be considered.
 
 **STEP 2**:
 
-Decompose the **DTM** and extract topics.
+Decompose the **`Document-Term Matrix DTM`** and extract topics.
 - LSA uses matrix factorization - Singular Value Decomposition (SVD)
 - pLSA uses probabilistic model, calculates the joint probability
   of seeing a word and a document together as a mixture of conditionally
@@ -92,7 +92,7 @@ Decompose the **DTM** and extract topics.
 The goal is to fins the `Topic-Term Matrix` by solving the equation
 
 `DTM` (dim: $m \times n$) = `Document-Topic Matrix` (dim: $m \times t$) 
-`Topic-Importance Matrix` (dim: $t \times \t) `Topic-Term Matrix` (dim: $t \times n)
+`Topic-Importance Matrix` (dim: $t \times $t) `Topic-Term Matrix` (dim: $t \times $n)
 
 **`Document-Term Matrix (DTM)`** (dim: $m \times t$)
 
