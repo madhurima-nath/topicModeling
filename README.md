@@ -36,6 +36,20 @@ end-to-end solution.
 
 ## <a name = "algo"> </a> Topic modeling algorithms
 
+• an unsupervised machine learning problem.
+• does not aim to find similarities in documents, 
+unlike text classification or clustering.
+• makes clusters of three types of words – co-occurring words, 
+distribution of words, and histogram of words topic-wise.
+• Conventional and well-known approaches to topic modeling are: 
+    § Latent Semantic Analysis (LSA) (Deerwester et al. 1990)
+    § Probabilistic Latent Semantic Analysis (pLSA) (Hofmann, 1999)
+    § Latent Dirichlet Allocation (LDA) (Blei et al., 2003)
+• basic principle behind the search of latent topics is the 
+**decomposition of the Document-Term Matrix (DTM) into a document-topic**
+**and a topic-term matrix**. The three methods differ in how
+they define and reach this goal.
+
 ### LDA
 
 ## <a name = "data"> </a>  Dataset used
@@ -88,3 +102,6 @@ There are a lot of pieces involved while designing an end-to-end solution.
 insert sample data architecture.
 
 # References:
+1. Deerwester, Scott, et al. "Indexing by latent semantic analysis." Journal of the American society for information science 41.6 (1990): 391-407.
+2. Hofmann, Thomas. "Probabilistic latent semantic indexing." In Proceedings of the 22nd annual international ACM SIGIR conference on Research and development in information retrieval. 1999.
+3. Blei, David M., Andrew Y. Ng, and Michael I. Jordan. "Latent dirichlet allocation." Journal of machine Learning research 3, no. Jan (2003): 993-1022.
