@@ -110,7 +110,7 @@ The goal is to fins the `Topic-Term Matrix` by solving the equation
 | doc 1 | | | |
 | doc 2 | | | |
 
-**`Topic-Importance Matrix`** (dim: $t \times \t)
+**`Topic-Importance Matrix`** (dim: $t \times t$)
 
 | | topic 1 | topic 2 | topic 3 |
 | --- | --- | --- | --- |
@@ -118,7 +118,7 @@ The goal is to fins the `Topic-Term Matrix` by solving the equation
 | topic 2 | | | |
 | topic 3 | | | |
 
-**`Topic-Term Matrix`** (dim: $t \times n)
+**`Topic-Term Matrix`** (dim: $t \times n$)
 | | term 1 | term 2 | term 3 |
 | --- | --- | --- | --- |
 | topic 1 | | | |
