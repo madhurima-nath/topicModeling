@@ -78,7 +78,7 @@ This matrix basically does a count of frequency of each of the words/terms
 in the documents. This is called the ***Term Frequency (TF)***.
 
 As an alternative, ***Term Frequency – Inverse Document Frequency (TF-IDF)*** 
-cam be considered.
+can be considered.
 
 **STEP 2**:
 
