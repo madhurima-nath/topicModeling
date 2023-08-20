@@ -140,7 +140,7 @@ collections of discrete data such as text corpora.
 * The topic probabilities provide an explicit representation of a document.
 
 Pros:
-* better performances than LSA and pLSA
+* better performances than LSA and pLSA - pLSA is prone to overfitting
 * can assign a probability to a new document thanks
   to the document-topic Dirichlet distribution
 * topics are open to human interpretation
