@@ -201,10 +201,12 @@ spark notebook link, explain spark nlp modules
 
 ## <a name = "end"> </a> End-to-end implementation
 There are a lot of pieces involved while designing an end-to-end solution. 
-![image](https://github.com/madhurima-nath/topicModeling/blob/main/dataArchitecture.jpg)
+![image](https://github.com/madhurima-nath/topicModeling/blob/main/dataSolution.jpg)
 
 ### Data architecture
-insert sample data architecture.
+This is a sample data architecture of an end-to-end solution which is scheduled for refreshes.
+![image](https://github.com/madhurima-nath/topicModeling/blob/main/dataArchitecture.jpeg)
+The medallion structure is a best practice in industry nowadays. 
 
 # References:
 1. Deerwester, Scott, et al. "Indexing by latent semantic analysis." Journal of the American society for information science 41.6 (1990): 391-407.
