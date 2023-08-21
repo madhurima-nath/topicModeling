@@ -208,7 +208,7 @@ There are a lot of pieces involved while designing an end-to-end solution.
 
 ### Data architecture
 This is a sample data architecture of an end-to-end solution which is scheduled for refreshes.
-![image](https://github.com/madhurima-nath/topicModeling/blob/main/dataArchitecture.jpeg)
+![image](https://github.com/madhurima-nath/topicModeling/blob/main/dataArchitecture.jpg))
 The medallion structure is a best practice in industry nowadays. 
 
 # References:
