@@ -12,6 +12,9 @@ end-to-end solution.
 - Section [Topic modeling algorithms](#algo) - explains the different topic
   modeling algorithms available.
 
+  Additional reading: Medium article on different
+  [topic modeling algorithms like LDA, NMF, BERTopic](https://medium.com/@m.nath/topic-modeling-algorithms-b7f97cec6005).
+
 - Section [Dataset used](#data) - provides information on the sample data that is
   used in this repository to perform topic modeling.
 
