@@ -191,7 +191,7 @@ This contains dataframe-based ML Pipeline APIs
 which lets users quickly assemble and configure
 ML solutions. It is fast and uses distributed computing.
 To learn more about PySpark ML package, refer
-[here](https://spark.apache.org/docs/2.3.0/api/python/pyspark.ml/html).
+[here](https://spark.apache.org/docs/2.3.0/api/python/pyspark.ml.html).
 
 Refer to [this notebook](https://github.com/madhurima-nath/topicModeling/blob/main/pysparkTopicModeling.ipynb)
 for analysis in PySpark
