@@ -206,6 +206,9 @@ terms/words in the topic is obtained and presented as result.
 | 2 | \[term1, term2, term3\] | \[prob1, prob2, prob3 \] |
 | 3 | \[term1, term2, term3\] | \[prob1, prob2, prob3 \] |
 
+This can be then visualized in the notebook itself as shown below.
+![image](https://github.com/madhurima-nath/topicModeling/blob/main/topicsImage.jpg)
+
 However it is also possible to map these output topics back to the
 original dataset, with each row showing which set of topic(s) it might belong to.
 This can be used if the requirement is that the end users want to drill down 
