@@ -18,18 +18,9 @@ end-to-end solution.
 - Section [Dataset used](#data) - provides information on the sample data that is
   used in this repository to perform topic modeling.
 
-  The sub-section
-  [Data processing/transformation using pandas](#pandas) provides the
-  well-known data processing steps. Data processing can also be done
-  using spark when hnadling datasets of large sizes.
-
-  The sub-section
-  [Data processing/transformation using spark](#spark) discusses the
-  advantages of using Spark and how it can be used on dataframes.
-
 - Section [Example results](#results) - shows the output of topic
   modeling on the above dataset. The analysis is done using both
-  pandas LDA modules and SparkNLP modules.
+  [pandas LDA](#pandasresults) and [SparkNLP LDA](#sparkresults) modules.
 
 - Section [End-to-end implementation](#end) showcases an example of a
   sample arcitecture of deploying such a large-scale solution to production.
@@ -171,13 +162,24 @@ Cons:
 
 ## <a name = "data"> </a>  Dataset used
 
-source, EDA, data cleaning/processing
+The Kaggle dataset is downloaded from 
+[here](https://www.kaggle.com/datasets/blessondensil294/topic-modeling-for-research-articles?resource=download&select=train.csv).
+It has abstract and title for a set of research articles
+and each article is assigned to one or more of the following topics:
+- Computer Science
+- Physics
+- Mathematics
+- Statistics
+- Quantitative Biology
+- Quantitative Finance
 
-### <a name = "pandas"> </a> Data processing/transformation using pandas
-pandas notebook
+### <a name = "pandasresults"> </a> Results using pandas
+Refer to [this notebook](https://github.com/madhurima-nath/topicModeling/blob/main/pandasTopicModeling.ipynb)
+for analysis in pandas.
 
-### <a name = "spark"> </a> Data processing/transformation using spark
-Spark notebook link
+### <a name = "sparkresults"> </a> Results using pyspark
+Refer to [this notebook](https://github.com/madhurima-nath/topicModeling/blob/main/pysparkTopicModeling.ipynb)
+for analysis in PySpark
 
 ## <a name = "results"> </a> Example results
 Depending on the requirements of the end-users, the output format of the topics obtained
@@ -205,11 +207,6 @@ Both these output formats can be easily fed into one of the data
 visualization platforms like MS Power BI or Tableau to provide 
 the end users with usable dashboards.
 
-### <a name = "pandasresults"> </a> Pandas results
-pandas notebook link, explain the pandas lda module
-
-### <a name = "sparkresults"> </a> Spark results
-spark notebook link, explain spark nlp modules
 
 ## <a name = "end"> </a> End-to-end implementation
 There are a lot of pieces involved while designing an end-to-end solution. 
