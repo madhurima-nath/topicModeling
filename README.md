@@ -178,6 +178,13 @@ Refer to [this notebook](https://github.com/madhurima-nath/topicModeling/blob/ma
 for analysis in pandas.
 
 ### <a name = "sparkresults"> </a> Results using pyspark
+
+**SparkNLP module**
+SparkNLP is developed and maintained by 
+[John Snow Labs](https://nlp.johnsnowlabs.com).
+It is an open-source text processing module
+built on top of Apache Spark and spark ML library.
+It supports Python, Scala and Java.
 Refer to [this notebook](https://github.com/madhurima-nath/topicModeling/blob/main/pysparkTopicModeling.ipynb)
 for analysis in PySpark
 
