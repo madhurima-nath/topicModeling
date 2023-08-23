@@ -34,7 +34,9 @@ end-to-end solution.
 - Section [End-to-end implementation](#end) showcases an example of a
   sample arcitecture of deploying such a large-scale solution to production.
   This also shows how multiple teams collaborate together for
-  an enterprise-wide to build such solutions. 
+  an enterprise-wide to build such solutions.
+  Additonal reading: [Medium article on Implementation of end-to-end ML
+  solution](https://medium.com/@m.nath/implementation-of-end-to-end-machine-learning-solution-aebdbc024c4e)
 
 
 ## <a name = "algo"> </a> Topic modeling algorithms
