@@ -185,6 +185,14 @@ SparkNLP is developed and maintained by
 It is an open-source text processing module
 built on top of Apache Spark and spark ML library.
 It supports Python, Scala and Java.
+
+## PySpark ML module
+This contains dataframe-based ML Pipeline APIs
+which lets users quickly assemble and configure
+ML solutions. It is fast and uses distributed computing.
+To learn more about PySpark ML package, refer
+[here](https://spark.apache.org/docs/2.3.0/api/python/pyspark.ml/html).
+
 Refer to [this notebook](https://github.com/madhurima-nath/topicModeling/blob/main/pysparkTopicModeling.ipynb)
 for analysis in PySpark
 
