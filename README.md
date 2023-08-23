@@ -48,11 +48,18 @@ end-to-end solution.
   distribution of words, and histogram of words topic-wise.
 - Conventional and well-known approaches to topic modeling are:
   
-    § Latent Semantic Analysis (LSA) (Deerwester et al. 1990)
+    § Latent Semantic Analysis (LSA)
   
-    § Probabilistic Latent Semantic Analysis (pLSA) (Hofmann, 1999)
+    § Probabilistic Latent Semantic Analysis (pLSA)
 
-    § Latent Dirichlet Allocation (LDA) (Blei et al., 2003)
+    § Latent Dirichlet Allocation (LDA)
+
+    § Hierarchical Dirichlet Process (HDP)
+
+    § Non-Matrix Factorization (NMF)
+
+    § BERTopic
+
 - basic principle behind the search of latent topics is the
   **decomposition of the Document-Term Matrix (DTM) into a document-topic**
   **and a topic-term matrix**. The three methods differ in how
