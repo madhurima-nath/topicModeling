@@ -187,7 +187,7 @@ It is an open-source text processing module
 built on top of Apache Spark and spark ML library.
 It supports Python, Scala and Java.
 
-## PySpark ML module
+**PySpark ML module**
 This contains dataframe-based ML Pipeline APIs
 which lets users quickly assemble and configure
 ML solutions. It is fast and uses distributed computing.
