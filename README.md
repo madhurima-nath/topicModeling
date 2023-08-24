@@ -236,6 +236,13 @@ This is a sample data architecture of an end-to-end solution which is scheduled 
 The medallion structure is a best practice in industry nowadays. 
 
 # References:
-1. Deerwester, Scott, et al. "Indexing by latent semantic analysis." Journal of the American society for information science 41.6 (1990): 391-407.
-2. Hofmann, Thomas. "Probabilistic latent semantic indexing." In Proceedings of the 22nd annual international ACM SIGIR conference on Research and development in information retrieval. 1999.
-3. Blei, David M., Andrew Y. Ng, and Michael I. Jordan. "Latent dirichlet allocation." Journal of machine Learning research 3, no. Jan (2003): 993-1022.
+1. Deerwester, Scott, et al. “Indexing by latent semantic analysis.” Journal of the American society for information science 41.6 (1990): 391–407.
+2. Hofmann, Thomas. “Probabilistic latent semantic indexing.” In Proceedings of the 22nd annual international ACM SIGIR conference on Research and development in information retrieval. 1999.
+3. Blei, David M., Andrew Y. Ng, and Michael I. Jordan. “Latent dirichlet allocation.” Journal of machine Learning research 3, no. Jan (2003): 993–1022.
+4. Lee, Daniel, and H. Sebastian Seung. “Algorithms for non-negative matrix factorization.” Advances in neural information processing systems, 13 (2000).
+5. Lee, Daniel, and H. Sebastian Seung. “Learning the parts of objects by non-negative matrix factorization.” Nature 401, no. 6755 (1999): 788–791.
+6. Egger, Roman, and Joanne Yu. “A topic modeling comparison between lda, nmf, top2vec, and berttopic to demystify twitter posts.” Frontiers in sociology 7 (2022): 886498.
+7. Grootendorst, Maarten. “BERTopic: Neural topic modeling with a class-based TF-IDF procedure. arXiv preprint arXiv:2203.05794 (2022).
+8. Devlin, Jacob, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. “Bert: Pre-training of deep bidirectional transformers for language understanding.” arXiv preprint arXiv:1810.04805 (2018).
+9. Shi, Tian, Kyeongpil Kang, Jaegul Choo, and Chandan K., Reddy. “Short-text topic modeling via non-negative matrix factorizationenriched with local word-context correlations.” In Proceedings of the 2018 World Wide Web Conference, pp. 1105–1114, 2018.
+10. Choo, Jaegul, Changhyun Lee, Chandan K. Reddy, and Haesun Park. “Utopian: User driven topic modeling based on interactive nonnegative matrix factorization.” IEEE transactions on visualization and computer graphics 19, np. 12 (2013): 1992: 2001.
