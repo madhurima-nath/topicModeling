@@ -215,7 +215,7 @@ original dataset, with each row showing which set of topic(s) it might belong to
 This can be used if the requirement is that the end users want to drill down 
 into each of the comments details. 
 
-| ID | Title | Abstract | Topic | Topic terms | Topic weights/probablities | 
+| ID | Title | Abstract | Topic | Topic terms | Topic weights/probabilities | 
 | --- | --- | --- | --- | --- | --- |
 | 1 | title 1 | abstract text | 1 | \[term1, term2, term3\] | \[prob1, prob2, prob3 \] |
 | 2 | title 2 | abstract text | 3 | \[term1, term2, term3\] | \[prob1, prob2, prob3 \] |
